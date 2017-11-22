@@ -46,7 +46,7 @@
           </ul>
         </div>
       </nav>
-    </div>  <!-- container-fluid -->
+    </div>  <!-- container-fluid van nav-bar-->
 
     <article class="container-fluid">
       <section id="home">
@@ -78,18 +78,42 @@
             </div>
             <h1>Sandbox Frontend development</h1>
       </section>
-    </article>
+    </article>    <!-- Code voor de carousel -->
+
+
     <article class="container" id="sandbox">
       <section id="js01">
         <h1>Output - getElementById()</h1>
           <div class="row">
-            <div class="col-6">
-              Door het drukken op een button zien we een pop-up verschijnen. De wordt door javascript in de browser veroorzaakt. 
+            <div class="col-4">
+              <p>Door het drukken op een button zien we een pop-up verschijnen. De wordt door javascript in de browser veroorzaakt.</p> 
             </div>
-            <div class="col-6">
+            <div class="col-4">
               <button onclick="alert('Dit is mijn eerste javascript output');" type="button" class="btn btn-success">Klik op mij!</button>
+
+              <button type="button" 
+                      class="btn btn-outline-warning"
+                      onclick="test();">Succes wens!</button>
+
+              <button type="button"
+                      class="btn btn-outline-info"
+                      onclick="vaarwel();">Info</button>
+
+                      
+            
+            </div>
+            <div class="col-4">
+                <button type="button" 
+                        class="btn btn-outline-primary"
+                        onclick="schrijf_tekst();">Go!</button>
+                <input type="text" id="watTekst">
+                <p id="mijnOutput">Mijn naam is: </p>
             </div>
           </div>
+
+          
+          
+
       </section>
       <section id="js02">
         <h1>Comments</h1>
@@ -98,6 +122,29 @@
         <h1>String</h1>
       </section>
     </article>
+
+    <script>        
+      function test() {
+        alert('Ik wens je succes!');
+        console.log('Dit stukje tekst wordt u aangeboden door de Hema');
+        alert('Hoi');
+      }
+
+      function vaarwel() {
+        alert("Tot ziens!");
+        console.log("Tot ziens!");
+      }
+
+      function schrijf_tekst() {
+        // Hier plaats ik een handvat op mijn inputtag
+        var inputtag = document.getElementById("watTekst");
+
+        // Hier plaats ik een handvat op mijn p-tag        
+        var mijnOutputParagraaf = document.getElementById("mijnOutput");
+
+        mijnOutputParagraaf.innerHTML = "<h5>Mijn naam is: " + inputtag.value + "</h5>";
+      }
+  </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

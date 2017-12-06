@@ -130,53 +130,48 @@
             <div class="col-4">
               <script>document.write("Deze tekst wordt u aangeboden door document.write()");</script>
             </div>
-            <div class="col-4"></div>
+            <div class="col-4">
+              <button type="button" 
+                      class="btn btn-danger btn-lg"
+                      onclick="wis_site();">Wis de site!</button>
+            </div>
           </div>
           
 
       </section>
       <section id="js02">
         <h1>Comments</h1>
+        <div class="row">
+          <div class="col-6">De eerste manier om in javascript code uit te commentarieren is per regel. Je zet dan voor de coderegel die je wilt uitcommentarieren twee forwardslashes // De browser negeert dan deze code. In Visual studio code wordt je code groen.</div>
+          <div class="col-6">De tweede manier om in javascript code uit te commentarieren is per codeblock. Je zet voor het codeblock een een forwardslash en een asterisk /* en aan het einde van het codeblock een asterisk en een forwardslash */. De browser negeert dan deze code. In Visual studio code wordt je code groen.
+          </div>
+        </div>
+
+        <!-- Dit is wat uitgecommentarieerde HTML5 tekst -->
+
+        <div class="row">
+          <div class="col-6"><img src="./images/comments/slashslash.png" alt="slashslash" class="img-fluid"></div>
+          <div class="col-6"><img src="./images/comments/slashasterisk.png" alt="slashasterisk" class="img-fluid"></div>
+        </div>
+        <div class="row">
+          <div class="col-6">HTML commentaar gaat anders. Voor uitcommentarieren van HTML code gebruik je &lt;!-- Dit is wat commentaar --&gt;</div>
+          <div class="col-6">
+            <img src="./images/comments/htmlcomment.png" alt="htmlcomment" class="img-fluid">
+          </div>
+        </div>
       </section>
       <section id="js03">
         <h1>String</h1>
       </section>
     </article>
 
-    <script>
-      function hoverActie() {        
-        console.log("Er over de knop gehoverd");
-        alert("Kijk in de console voor een mooie tekst");
-      }
 
-
-
-      function test() {
-        alert('Ik wens je succes!');
-        console.log('Dit stukje tekst wordt u aangeboden door de Hema');
-        alert('Hoi');
-      }
-
-      function vaarwel() {
-        alert("Tot ziens!");
-        console.log("Tot ziens!");
-      }
-
-      function schrijf_tekst() {
-        // Hier plaats ik een handvat op mijn inputtag
-        var inputtag = document.getElementById("watTekst");
-
-        // Hier plaats ik een handvat op mijn p-tag        
-        var mijnOutputParagraaf = document.getElementById("mijnOutput");
-
-        mijnOutputParagraaf.innerHTML = "<h5>Mijn naam is: " + inputtag.value + "</h5>";
-      }
-  </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="./js/sandbox.js"></script>
   </body>
 </html>

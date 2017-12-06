@@ -33,3 +33,29 @@ function wis_site() {
 }
 
 //###############################################################################
+
+// section#js03 
+// ##############################################################################
+var fruit = ["meloen", "sinaasappel", "ananas"];
+var p_tag = document.getElementById("showArray");
+
+// Maak een selector voor je p#showArray in een functie
+function showArray() {
+  // alert("Hoi");  
+  p_tag.innerHTML = "De inhoud van het array is: " + fruit;
+}
+
+
+function showArrayOl() {
+  var outputText = "<ol>"
+  var output = "";
+  for (var i = 0; i < fruit.length; i++) {
+    output = output + "<li>" + fruit[i] + "</li>";
+  }
+  outputText = outputText + output;
+  outputText = outputText + "</ol>";
+  p_tag.innerHTML = output;
+}
+
+
+

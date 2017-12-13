@@ -53,8 +53,8 @@ function showArrayOl() {
     output = output + "<li>" + fruit[i] + "</li>";
   }
   outputText = outputText + output;
-  outputText = outputText + "</ol>";
-  p_tag.innerHTML = output;
+  outputText = outputText + "</ol>";  
+  p_tag.innerHTML = outputText;
 }
 
 

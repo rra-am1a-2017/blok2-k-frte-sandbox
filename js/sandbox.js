@@ -38,6 +38,9 @@ function wis_site() {
 // ##############################################################################
 var fruit = ["meloen", "sinaasappel", "ananas"];
 var p_tag = document.getElementById("showArray");
+var p_tagAdd = document.getElementById("p_tagAdd");
+
+p_tagAdd.innerHTML = showArrayForLoop();
 
 // Maak een selector voor je p#showArray in een functie
 function showArray() {
@@ -45,8 +48,7 @@ function showArray() {
   p_tag.innerHTML = "De inhoud van het array is: " + fruit;
 }
 
-
-function showArrayOl() {
+function showArrayForLoop() {
   var outputText = "<ol>"
   var output = "";
   for (var i = 0; i < fruit.length; i++) {
@@ -54,7 +56,20 @@ function showArrayOl() {
   }
   outputText = outputText + output;
   outputText = outputText + "</ol>";  
-  p_tag.innerHTML = outputText;
+  return outputText;
+}
+
+function showArrayOl() {
+  p_tag.innerHTML = showArrayForLoop();
+}
+
+function btn_push() {
+  var input_push = document.getElementById("input_push");
+
+  // info over pushen vind je hier https://www.w3schools.com/js/js_array_methods.asp
+  fruit.push(input_push.value);
+  p_tagAdd.innerHTML = showArrayForLoop();
+  input_push.value = "";
 }
 
 

@@ -72,5 +72,16 @@ function btn_push() {
   input_push.value = "";
 }
 
+function btn_unshift() {
+  var input_unshift = document.getElementById("input_unshift");
+
+  // info over pushen vind je hier https://www.w3schools.com/js/js_array_methods.asp
+  fruit.unshift(input_unshift.value);
+  p_tagAdd.innerHTML = showArrayForLoop();
+  input_unshift.value = "";
+}
+
+
+
 
 

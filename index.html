@@ -177,14 +177,26 @@
         <div class="row">
           <div class="col-6">
             <p>Voeg een nieuw fruitje toe aan het eind van het array</p>
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Voeg toe aan array..." aria-label="Search for..." id="input_push">
-              <span class="input-group-btn">
-                <button class="btn btn-danger"
-                        type="button"
-                        onclick="btn_push();">Voeg toe aan eind!</button>
-              </span>
-            </div>
+            <p>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="nieuw array element..." aria-label="Search for..." id="input_push">
+                <span class="input-group-btn">
+                  <button class="btn btn-danger"
+                          type="button"
+                          onclick="btn_push();">Voeg toe aan eind!</button>
+                </span>
+              </div>
+            </p>
+            <p>
+              <div class="input-group">
+                <span class="input-group-btn">
+                  <button class="btn btn-warning" 
+                          type="button"
+                          onclick="btn_unshift();">Voeg toe aan begin!</button>
+                </span>
+                <input type="text" class="form-control" placeholder="nieuw array element..." aria-label="Search for..." id="input_unshift">
+              </div>
+            </p>
           </div>
           <div class="col-6">
             <p id="p_tagAdd"></p>
